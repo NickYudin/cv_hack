@@ -26,6 +26,7 @@ class App
     @files.each do |cv|
       cv_content = FileLoader.new.run(cv)
       extract(cv_content, cv.gsub('.pdf', '.json'))
+      sleep 42
     end
   end
 
